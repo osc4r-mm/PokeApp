@@ -16,12 +16,12 @@ function PokemonDetail() {
     fetchPokemon();
   }, [name]);
 
-  if (!pokemon) return <div>Carregant...</div>;
+  if (!pokemon) return <div className="pokedex-detail">Carregant...</div>;
 
   const prevState = location.state || {};
 
   return (
-    <div>
+    <div className="pokedex-detail">
       <h2>{pokemon.name}</h2>
       <img
         src={pokemon.sprites?.front_default}
@@ -31,6 +31,7 @@ function PokemonDetail() {
       />
       <br />
       <button
+        className="pokedex-btn"
         onClick={() =>
           navigate("/", { state: prevState })
         }

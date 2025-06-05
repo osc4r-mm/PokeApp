@@ -35,10 +35,11 @@ function PokemonComputer() {
   const totalPages = Math.ceil(total / pageSize);
 
   return (
-    <div>
-      <div>
-        <div>
-          <span>PokéApp</span>
+    <div className="pokedex-bg">
+      <div className="pokedex-frame">
+        <div className="pokedex-header">
+          <div className="pokedex-led" />
+          <span className="pokedex-title">PokéApp</span>
         </div>
         <ViewSwitcher view={view} setView={setView} />
         {view === 'list' ? (
