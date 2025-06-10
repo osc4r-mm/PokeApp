@@ -5,7 +5,7 @@ import Pagination from './Pagination';
 import PokemonList from './PokemonList';
 import PokemonGrid from './PokemonGrid';
 
-function PokemonComputer() {
+function ComputerPage() {
   const [pokemons, setPokemons] = useState([]);
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState(0);
@@ -65,4 +65,4 @@ function PokemonComputer() {
   );
 }
 
-export default PokemonComputer;
+export default ComputerPage;

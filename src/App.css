@@ -222,14 +222,3 @@ ul.pokemon-list {
   color: #fff;
   border: 2px solid #1565c0;
 }
-
-/* Responsive */
-@media (max-width: 600px) {
-  .pokedex-frame {
-    max-width: 98vw;
-    padding: 0.8rem 0.2rem 1.2rem 0.2rem;
-  }
-  .pokemon-grid {
-    grid-template-columns: 1fr;
-  }
-}
